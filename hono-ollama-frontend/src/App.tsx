@@ -1,15 +1,17 @@
-import './App.css'
-import ChatUI from "./components/ChatUI.tsx";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ChatUI from './components/ChatUI/ChatUI';
+import Home from './components/Home/Home';
 
-function App() {
 
+const App = () => {
   return (
-    <>
-      <div className="app">
-          <ChatUI />
-      </div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/chat" element={<ChatUI />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
