@@ -34,5 +34,13 @@
   {
     "role": "assistant",
     "content": "Son 3 rengi bu şekilde söyleyelim:\n\n1. **Mavi**\n2. **Mor**\n3. **Kırmızı**  \n\n\n\n \nUmarım faydalı olmuştur! 😊 \n"
+  },
+  {
+    "role": "user",
+    "content": "Bana 3 renk söyle"
+  },
+  {
+    "role": "assistant",
+    "content": "Harika bir soru! İşte 3 renk:\n\n1. **Sarı**\n2. **Yeşil**\n3. **Mavi** \n\n\n  \nUmarım yardımcı olmuştur. 😊 \n"
   }
 ]
