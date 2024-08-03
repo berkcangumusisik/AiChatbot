@@ -7,13 +7,16 @@ import axios from "axios";
 const BASE_URL = "http://localhost:3002";
 function App() {
   const [ollamaResponse, setOllamaResponse] = useState<string>("");
+  const [prompt, setPrompt] = useState<string>("");
   const handleButtonClick = async () => {
 
     try {
-      const response = await axios.post(`${BASE_URL}/generate`,{prompt: "Merhaba"});
+      const response = await axios.post(`${BASE_URL}/generate`,{prompt});
+
       const message = response.data.message;
-      setOllamaResponse(message);
-      console.log();
+
+        setOllamaResponse(message);
+
     } catch (error) {
       console.error(error);
     }
@@ -33,11 +36,12 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <input type="text" value={prompt} onInput={(event) => setPrompt(event.target.value)}/>
+        <button onClick={handleButtonClick}>
+          Prompt'u gönder
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+         <code>{ollamaResponse}</code>
         </p>
       </div>
       <p className="read-the-docs">

@@ -18,5 +18,21 @@
   {
     "role": "assistant",
     "content": "Elbette, biraz önceki renkleri tekrar yazıyorum: \n\n1. **Koyu Kahverengi**\n2. **Sarı**\n3. **Turuncu**\n4. **Yeşil**\n5. **Mavi**\n6. **Mor**\n7. **Kırmızı**\n8. **Siyah**\n9. **Beşin** \n\n\n\n"
+  },
+  {
+    "role": "user",
+    "content": "Merhaba"
+  },
+  {
+    "role": "assistant",
+    "content": "Merhaba! 😊  Nasıl yardımcı olabilirim? \n"
+  },
+  {
+    "role": "user",
+    "content": "son 3 rengi söyler misin?"
+  },
+  {
+    "role": "assistant",
+    "content": "Son 3 rengi bu şekilde söyleyelim:\n\n1. **Mavi**\n2. **Mor**\n3. **Kırmızı**  \n\n\n\n \nUmarım faydalı olmuştur! 😊 \n"
   }
 ]
