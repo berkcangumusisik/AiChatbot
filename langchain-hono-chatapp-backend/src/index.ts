@@ -22,7 +22,7 @@ app.get('/loadTextEmbeddings', async (c) => {
     {
      chunkSize : 1000, // Kaç karakterde bölünecek
      separators : ['\n\n', '\n', ' ', '', '###'], // Bölme karakteri
-
+     chunkOverlap :50 
     }
   )
 
